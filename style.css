@@ -1,0 +1,13 @@
+* {
+    color: #F3F3E0;
+    font-family: 'Raleway';
+}
+#header-nav {
+    background: rgb(116,159,213);
+    background: linear-gradient(38deg, rgba(116,159,213,1) 10%, rgba(114,159,215,1) 29%, rgba(243,243,224,1) 100%);
+}
+@media (max-width: 412px) {
+    #mynavbar {
+        margin-top: 1rem;
+    }
+}
