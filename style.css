@@ -1,5 +1,5 @@
 * {
-    color: #F3F3E0;
+    color: whitesmoke;
     font-family: 'Raleway';
 }
 #header-nav {
@@ -10,4 +10,7 @@
     #mynavbar {
         margin-top: 1rem;
     }
+}
+.start-10 {
+    left: 10%;
 }
