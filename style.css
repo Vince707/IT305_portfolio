@@ -1,7 +1,6 @@
 * {
     color: whitesmoke;
     font-family: 'Raleway';
-    font-size: 1.2vw;
 }
 #header-nav {
     background: rgb(34,34,34);
@@ -10,6 +9,9 @@
 @media (max-width: 412px) {
     #mynavbar {
         margin-top: 1rem;
+    }
+    #hero-img {
+        width: 100dvw;
     }
 }
 .start-10 {
