@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="icon" href="ron.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Ron Vincent Taniegra</title>
 </head>
 <body data-bs-theme="dark">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="header-nav">
-        <div class="container-fluid d-flex justify-content-between align-items-center px-5">
+        <div class="container-fluid d-inline-flex justify-content-between align-items-center px-5">
             <a class="navbar-brand" href="index.html">
                 <img src="ron.png" class="rounded-circle me-2" style="height: 3rem;" alt="ron_logo">
                 Ron Vincent Taniegra
@@ -54,11 +57,12 @@
             </div>
         </div>
     </nav>    
+    <!-- HERO SECTION-->
     <div class="hero-image position-relative">
-        <img src="hero-img.jpeg" alt="hero-image" class="container-fluid m-0 p-0 " id="hero-img">
-        <div class="hero-text position-absolute top-50 start-10 translate-middle-y text-start text-white text-sm-center text-md-start">
-            <h1>Hi! I am Ron Vincent</h1>
-            <h5>an Aspiring Photographer</h5>
+        <img src="hero-img.jpeg" alt="hero-image" class="container-fluid m-0 p-0 flex-wrap" id="hero-img">
+        <div class="hero-text position-absolute top-50 start-10 translate-middle-y text-start">
+            <p class="h1">Hi! I am <b>Ron Vincent</b></p>
+            <p class="h5">an Aspiring Photographer</p>
             <div class="mt-3">
                 <button type="button" class="btn btn-outline-light px-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -75,6 +79,44 @@
                 </button>
             </div>
         </div>
+    </div>
+    
+    <!-- FEATURED LANDSCAPES -->
+    <div class="container-fluid p-0 m-0 d-flex flex-column" id="landscape-container" >
+        <!-- SECTION -->
+    <div class="container-fluid d-flex justify-content-around align-items-center mb-5">
+        <div class="d-flex align-items-center p-4 flex-column border border-dark rounded-4 border-1 shadow-lg px-5 px-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#A1D6B2" class="bi bi-camera me-2" viewBox="0 0 16 16">
+                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+            </svg>
+            <p class="h4 pt-3">Capturing</p>
+            <p class="h5">Sceneries</p>
+        </div>
+        <div class="d-flex align-items-center p-4 flex-column border border-dark rounded-4 border-1 shadow-lg px-5 px-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7BD3EA" class="bi bi-chat-left-quote-fill" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm7.194 2.766a1.7 1.7 0 0 0-.227-.272 1.5 1.5 0 0 0-.469-.324l-.008-.004A1.8 1.8 0 0 0 5.734 4C4.776 4 4 4.746 4 5.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.5 2.5 0 0 0-.227-.4zM11 7.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.5 2.5 0 0 0-.228-.4 1.7 1.7 0 0 0-.227-.273 1.5 1.5 0 0 0-.469-.324l-.008-.004A1.8 1.8 0 0 0 10.07 4c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+              </svg>
+            <p class="h4 pt-3">Conveying</p>
+            <p class="h5">Messages</p>
+        </div>
+        <div class="d-flex align-items-center p-4 flex-column border border-dark rounded-4 border-1 shadow-lg px-5 px-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#8B5DFF" class="bi bi-grid-3x2" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v8a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5zM1.5 3a.5.5 0 0 0-.5.5V7h4V3zM5 8H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4V8zm4-1V3H6v4zm1 1v4h3.5a.5.5 0 0 0 .5-.5V8zm0-1h4V3.5a.5.5 0 0 0-.5-.5H11z"/>
+              </svg>
+            <p class="h4 pt-3">Composition</p>
+            <p class="h5">& Post-processing</p>
+        </div>
+    </div>
+        <div class="video-container container-fluid p-0 m-0">
+            <video id="scrollVideo" muted>
+                <source src="landscape2.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+    <div class="container" style="background-color: red; height: 200dvh;">
+        frame
     </div>
 </body>
 </html>

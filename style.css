@@ -2,18 +2,41 @@
     color: whitesmoke;
     font-family: 'Raleway';
 }
-#header-nav {
+#header-nav, body {
     background: rgb(34,34,34);
     background: linear-gradient(38deg, rgba(34,34,34,1) 10%, rgba(28,27,27,1) 34%, rgba(37,37,37,1) 100%);
 }
-@media (max-width: 412px) {
+@media (max-width: 576px) {
     #mynavbar {
         margin-top: 1rem;
     }
     #hero-img {
-        width: 100dvw;
+        height: 25dvh;
+        /* position: relative; */
     }
+    /* .hero-text {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    } */
 }
 .start-10 {
     left: 10%;
+}
+#landscape-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-container {
+    position: sticky;
+    top: 20%;
+    width: 100%;
+    height: 400px;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
