@@ -15,12 +15,13 @@
     <link rel="icon" href="ron.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="animation.js"></script>
     <title>Ron Vincent Taniegra</title>
 </head>
 <body data-bs-theme="dark">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="header-nav">
-        <div class="container-fluid d-inline-flex justify-content-between align-items-center px-5">
+        <div class="container-fluid d-flex justify-content-center justify-content-lg-between align-items-center px-5 mx-auto">
             <a class="navbar-brand" href="index.html">
                 <img src="ron.png" class="rounded-circle me-2" style="height: 3rem;" alt="ron_logo">
                 Ron Vincent Taniegra
@@ -28,7 +29,7 @@
             <div>
                 <ul class="navbar-nav d-flex flex-row">
                     <li class="nav-item me-3">
-                        <a class="nav-link d-flex align-items-center" href="#">
+                        <a class="nav-link d-flex align-items-center" href="index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house me-2" viewBox="0 0 16 16">
                                 <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
                             </svg>
@@ -36,7 +37,7 @@
                         </a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link d-flex align-items-center" href="#">
+                        <a class="nav-link d-flex align-items-center" href="about-me.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-laughing me-2" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                                 <path d="M12.331 9.5a1 1 0 0 1 0 1A5 5 0 0 1 8 13a5 5 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5"/>
@@ -45,7 +46,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="#">
+                        <a class="nav-link d-flex align-items-center" href="gallery.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera me-2" viewBox="0 0 16 16">
                                 <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
                                 <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
@@ -58,33 +59,33 @@
         </div>
     </nav>    
     <!-- HERO SECTION-->
-    <div class="hero-image position-relative">
+    <section class="hero-image position-relative">
         <img src="hero-img.jpeg" alt="hero-image" class="container-fluid m-0 p-0 flex-wrap" id="hero-img">
         <div class="hero-text position-absolute top-50 start-10 translate-middle-y text-start">
             <p class="h1">Hi! I am <b>Ron Vincent</b></p>
             <p class="h5">an Aspiring Photographer</p>
             <div class="mt-3">
-                <button type="button" class="btn btn-outline-light px-3">
+                <a type="button" class="btn btn-outline-light px-3" href="#contact-section">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                     </svg>
                     Contact
-                </button>
-                <button type="button" class="btn btn-outline-light px-3">
+                </a>
+                <a type="button" class="btn btn-outline-light px-3" href="gallery.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera me-2" viewBox="0 0 16 16">
                         <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
                         <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
                     </svg>
                     Gallery
-                </button>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
     
     <!-- FEATURED LANDSCAPES -->
-    <div class="container-fluid p-0 m-0 d-flex flex-column video-parent-container">
+    <section class="container-fluid p-0 m-0 d-flex flex-column video-parent-container">
         <!-- FEATURES -->
-    <div class="container-fluid p-5">
+    <section class="container-fluid p-5">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-4 d-flex align-items-center p-4 flex-column  mb-4 mb-md-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#A1D6B2" class="bi bi-camera me-2" viewBox="0 0 16 16">
@@ -109,34 +110,35 @@
                 <p class="h5">& Post-processing</p>
             </div>
         </div>
-    </div>
+    </section>
         <div class="video-container container-fluid p-0 m-0">
-            <video id="scrollVideo" muted>
+            <video class="scrollVideo" id="scrollVideo1" muted>
                 <source src="landscape2.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
         </div>
-    </div>
-    <!-- QUOTE -->
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center p-5">
-        <p class="h2 text-center">°‧ 𓆝 𓆟 𓆞 ·｡</p>
-        <p class="h2 text-center"><b>Rest</b> and take a break. <b>The world can wait.</b></p>
-        <p class="h6 fst-italic text-center">Even the remote has a pause button. "It's ok to simply exist, be a good person, and experience life at your own pace :) you'll be okay"</p>
-        <p class="h6 fst-italic text-center">- Kiel Raven Rigor</p>
-    </div>
+    </section>
+    
     <!-- FEATURED SELF-CAPTURES -->
-    <div class="container-fluid p-0 m-0 d-flex flex-column video-parent-container">
+    <section class="container-fluid p-0 m-0 d-flex flex-column video-parent-container">
+        <!-- QUOTE -->
+        <section class="container-fluid d-flex flex-column justify-content-center align-items-center p-5">
+            <p class="h2 text-center">°‧ 𓆝 𓆟 𓆞 ·｡</p>
+            <p class="h2 text-center"><b>Rest</b> and take a break. <b>The world can wait.</b></p>
+            <p class="h6 fst-italic text-center">Even the remote has a pause button. "It's ok to simply exist, be a good person, and experience life at your own pace :) you'll be okay"</p>
+            <p class="h6 fst-italic text-center">- Kiel Raven Rigor</p>
+        </section>
         <div class="video-container container-fluid p-0 m-0">
-            <video id="scrollVideo" muted>
-                <source src="self-capture.mp4" type="video/mp4">
+            <video class="scrollVideo" id="scrollVideo2" muted>
+                <source src="self-capture-2.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
         </div>
-    </div>
+    </section>
     <!-- CONTACT -->
-    <form class="container-fluid d-flex flex-row justify-content-around align-items-center col-10 p-5 my-5">
-        <img src="blue.png" alt="My Icon" class="col-5">
-        <div class="col-6">
+    <form class="container-fluid d-flex flex-column flex-lg-row justify-content-around align-items-center col-10 p-5 my-5" id="contact-section">
+        <img src="blue.png" alt="My Icon" class="col-lg-5 col-12 pb-lg-0 pb-5">
+        <div class="col-lg-6 col-12">
             <p class="h1 fw-bold">Contact Me!</p>
             <div class="form-floating mb-3 mt-3">
                 <input type="text" class="form-control form-control-sm" id="name" placeholder="Enter name" name="name">
@@ -150,29 +152,31 @@
                 <label for="message">Message:</label>
                 <textarea class="form-control form-control-sm" rows="5" id="message" name="message" style="resize: none;"></textarea>   
             </div>
-            <div class="d-flex justify-content-start align-items-center">
-                <button type="button" class="btn btn-outline-light my-3 px-3 me-auto">Submit</button>
-                <a href="https://www.facebook.com" class="mx-3 " target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                      </svg>
-                </a>
-                <a href="https://www.twitter.com" class="mx-3 " target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                      </svg>
-                </a>
-                <a href="https://www.instagram.com" class="mx-3 "target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                      </svg>
-                </a>
+            <div class="d-flex flex-column flex-lg-row justify-content-start align-items-center">
+                <button type="button" class="btn btn-outline-light my-3 px-3 ms-0 me-lg-auto">Submit</button>
+                    <span>
+                        <a href="https://www.facebook.com" class="mx-3 " target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                              </svg>
+                        </a>
+                        <a href="https://www.twitter.com" class="mx-3 " target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                              </svg>
+                        </a>
+                        <a href="https://www.instagram.com" class="mx-3 "target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                              </svg>
+                        </a>
+                    </span>
             </div>
         </div>
     </form>
     <!-- FOOTER -->
     <footer class="container-fluid d-flex flex-row justify-content-center align-items-center p-3" style="background-color: black;">
-        <p class="fst-italic">&copy; <span id="current-year"></span> Ron Vincent Diego Taniegra. All Rights Reserved.</p>
+        <p class="fst-italic text-center">&copy; <span id="current-year"></span> Ron Vincent Diego Taniegra. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
