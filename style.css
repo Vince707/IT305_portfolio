@@ -24,10 +24,12 @@
     left: 10%;
 }
 #landscape-container {
-    height: 100vh;
+    /* height: 50vh; */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 .video-container {
     position: sticky;

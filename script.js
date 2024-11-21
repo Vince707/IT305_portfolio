@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const video = document.getElementById("scrollVideo");
-    const container = $("#landscape-container");
+    const container = $(".video-parent-container");
     let containerHeight = container.height(); // Get initial container height
     let videoDuration = 10; // Default duration
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
                 Math.max((scrollTop - offsetTop) / containerHeight, 0),
                 1
             );
-            targetTime = scrollProgress * videoDuration;
+            targetTime = (scrollProgress * videoDuration) * 2;
         }
     });
 
@@ -43,4 +43,6 @@ $(document).ready(function () {
 
     // Start animation loop
     smoothUpdate();
+
+    $("#current-year").text(new Date().getFullYear());
 });
