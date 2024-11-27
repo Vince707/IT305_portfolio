@@ -32,7 +32,9 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
+
 .start-10 {
     left: 10%;
 }
@@ -62,10 +64,27 @@ a {
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    cursor: pointer; /* Add a mouse pointer on hover */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+}
+.hero-image, #contact-section, .about-me-subtitle {
+    opacity: 0;
+    position: relative;
+    left: -20px; 
+}
+
+.features-item {
+    opacity: 0;
+    position: relative;
+    bottom: -20px;
+}
+
+.quote-home, .main-title {
+    opacity: 0;
+    position: relative;
+    top: -20px;
 }

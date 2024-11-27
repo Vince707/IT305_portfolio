@@ -64,22 +64,37 @@ $(document).ready(function () {
     /// FOR the footer 
     $("#current-year").text(new Date().getFullYear());
 
-    /// FOR the Gallery Dynamic Pictures
-    function addImages(container, folder, count) {
-        for (let i = 1; i <= count; i++) {
-            const imgElement = `<img class="cards col-4 col-lg-2 m-3" src="${folder}/${i}.jpg" alt="Image ${i}" id="${folder}/${i}.jpg">`;
-            container.append(imgElement);
+    $(document).ready(function () {
+        function addImages(container, folder, count) {
+            for (let i = 1; i <= count; i++) {
+                const imgElement = `<img class="grid-item card col-4 col-lg-2 m-3" 
+                                        src="${folder}/${i}.jpg" 
+                                        alt="Image ${i}" 
+                                        id="${folder}/${i}.jpg" 
+                                        data-bs-toggle="modal" 
+                                        data-bs-target="#imageModal">`;
+                container.append(imgElement);
+            }
         }
-    }
     
-    const landscapeColumns = $("#landscape-columns");
-    const selfCaptureColumns = $("#self-capture-columns");
-
-    /// Add images for landscapes (1-50)
-    addImages(landscapeColumns, "landscape", 50);
-
-    /// Add images for self-captures (1-36)
-    addImages(selfCaptureColumns, "self-capture", 36);
+        const landscapeColumns = $("#landscape-columns");
+        const selfCaptureColumns = $("#self-capture-columns");
+    
+        // Add images for landscapes (1-50)
+        addImages(landscapeColumns, "landscape", 50);
+    
+        // Add images for self-captures (1-41)
+        addImages(selfCaptureColumns, "self-capture", 41);
+    
+        $(document).on("click", ".grid-item", function () {
+            const imgSrc = $(this).attr("src");
+            const imgAlt = $(this).attr("alt");
+            
+            $("#modalImage").attr("src", imgSrc);
+            $("#imageModalLabel").text(imgAlt);
+        });
+    });
+    
 
     /// FOR the Back to Top button
     let myButton = $("#myBtn");
@@ -96,4 +111,57 @@ $(document).ready(function () {
         $("html, body").animate({ scrollTop: 0 }, "fast");
     });
 
+    /// FOR Animation
+    function isElementInView(selector) {
+        const element = $(selector);
+        const windowTop = $(window).scrollTop();
+        const windowBottom = windowTop + $(window).height();
+        const elementTop = element.offset().top;
+        const elementBottom = elementTop + element.outerHeight();
+    
+        return elementBottom >= windowTop && elementTop <= windowBottom;
+    }
+    function applyLeftAnimation(selector) {
+        $(selector).animate(
+            {
+                opacity: 1,
+                left: "0px"
+            },
+            1500,
+            "swing"
+        );
+    }
+    function applyTopAnimation(selector) {
+        $(selector).animate(
+            {
+                opacity: 1,
+                top: "0px"
+            },
+            1500,
+            "swing"
+        );
+    }
+    function applyBottomAnimation(selector) {
+        $(selector).animate(
+            {
+                opacity: 1,
+                bottom: "0px"
+            },
+            1500,
+            "swing"
+        );
+    }
+    applyLeftAnimation(".hero-image");
+    applyBottomAnimation(".features-item");
+    applyTopAnimation(".main-title");
+    applyLeftAnimation(".about-me-subtitle");
+    
+    $(window).scroll(function () {
+        if (isElementInView(".quote-home")) {
+            applyTopAnimation(".quote-home");
+        }
+        if (isElementInView("#contact-section")) {
+            applyLeftAnimation("#contact-section");
+        }
+    });
 });
