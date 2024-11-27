@@ -56,7 +56,6 @@ $(document).ready(function () {
                 video.currentTime = data.currentTime;
             }
         });
-
         requestAnimationFrame(smoothUpdate);
     }
 
@@ -65,21 +64,36 @@ $(document).ready(function () {
     /// FOR the footer 
     $("#current-year").text(new Date().getFullYear());
 
-    // Function to dynamically add images to a container
+    /// FOR the Gallery Dynamic Pictures
     function addImages(container, folder, count) {
         for (let i = 1; i <= count; i++) {
-            const imgElement = `<img class="cards col-6 col-lg-2 m-3" src="${folder}/${i}.jpg" alt="Image ${i}">`;
+            const imgElement = `<img class="cards col-4 col-lg-2 m-3" src="${folder}/${i}.jpg" alt="Image ${i}" id="${folder}/${i}.jpg">`;
             container.append(imgElement);
         }
     }
-
-    // Get the containers
+    
     const landscapeColumns = $("#landscape-columns");
     const selfCaptureColumns = $("#self-capture-columns");
 
-    // Add images for landscapes (1-50)
+    /// Add images for landscapes (1-50)
     addImages(landscapeColumns, "landscape", 50);
 
-    // Add images for self-captures (1-36)
+    /// Add images for self-captures (1-36)
     addImages(selfCaptureColumns, "self-capture", 36);
+
+    /// FOR the Back to Top button
+    let myButton = $("#myBtn");
+
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 20) {
+            myButton.show();
+        } else {
+            myButton.hide();
+        }
+    });
+
+    myButton.on("click", function() {
+        $("html, body").animate({ scrollTop: 0 }, "fast");
+    });
+
 });
