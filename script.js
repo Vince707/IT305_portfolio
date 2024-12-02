@@ -164,4 +164,34 @@ $(document).ready(function () {
             applyLeftAnimation("#contact-section");
         }
     });
+
+    /// Hero Section Name Effect
+    $(document).ready(function () {
+        let heroName = $("#hero-name");
+        let heroNameEffects = [
+            "fw-bold",
+            "fw-bolder",
+            "fw-medium",
+            "fw-lighter",
+            "text-decoration-line-through",
+            "text-decoration-underline",
+            "text-decoration-none",
+            "font-monospace",
+            "fst-italic",
+            "fst-normal",
+            "rotate-1",
+            "shadow",
+            "glow"
+        ];
+    
+        function getRandomEffect() {
+            return heroNameEffects[Math.floor(Math.random() * heroNameEffects.length)];
+        }
+    
+        setInterval(function () {
+            heroName.removeClass(heroNameEffects.join(" "));
+            heroName.addClass(getRandomEffect());
+        }, 300);
+    });
+    
 });
